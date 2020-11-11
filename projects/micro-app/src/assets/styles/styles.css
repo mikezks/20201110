@@ -1,0 +1,76 @@
+/**
+ * CSS variable definitions
+ */
+
+ :root {
+  --img-sample-comp-css-var: assets/images/sample-comp-css-var.png;
+  --sample-comp-css-color: red;
+  --sample-comp-css-var-color: darkolivegreen;
+  --sample-tag-color: gold;
+  --sample-tag-binding-color: deeppink;
+  --sample-tag-dataurl-color: deepskyblue;
+  --sample-external-css-color: blue;
+  --sample-app-global-css-color: orange;
+}
+
+
+/**
+ * CSS definitions relevant for Asset Loading Demo
+ */
+
+ .sample-external-css {
+  background-image: url(/assets/images/sample-external-css.png);
+  border-color: var(--sample-external-css-color);
+}
+
+
+/**
+ * Demo App Styling
+ */
+
+:host {
+  border: 5px dashed green;
+  display: block;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-container {
+  width: 386px;
+  height: 236px;
+  border: 2px dotted black;
+  margin-top: 10px;
+}
+
+.alt-text {
+  z-index: -1;
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.image-container .alt-text {
+  border: 5px solid black;
+}
+
+.image-container img+.alt-text {
+  top: -238px;
+}
+
+.image-container img {
+  width: 386px;
+  height: 236px;
+}
+
+.sample-external-css {
+  border-color: var(--sample-external-css-color);
+}
+
+.sample-external-css .alt-text {
+  color: var(--sample-external-css-color);
+  border-color: var(--sample-external-css-color);
+}

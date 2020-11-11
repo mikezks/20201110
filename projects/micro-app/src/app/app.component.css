@@ -1,0 +1,62 @@
+/**
+ * CSS definitions relevant for Asset Loading Demo
+ */
+
+.sample-comp-css {
+  background-image: url(/assets/images/sample-comp-css.png);
+  border-color: var(--sample-comp-css-color);
+}
+
+.sample-comp-css-var {
+  background-image: var(--img-sample-comp-css-var);
+  border-color: var(--sample-comp-css-var-color);
+}
+
+.sample-tag-dataurl {
+  border-color: var(--sample-tag-dataurl-color);
+}
+
+
+/**
+ * Demo App Styling
+ */
+
+:host {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 5px dashed green;
+  display: block;
+  padding: 20px;
+}
+
+.sample-tag {
+  border-color: var(--sample-tag-color);
+}
+
+.sample-tag-binding {
+  border-color: var(--sample-tag-binding-color);
+}
+
+.sample-comp-css .alt-text {
+  color: var(--sample-comp-css-color);
+  border-color: var(--sample-comp-css-color);
+}
+
+.sample-comp-css-var .alt-text {
+  color: var(--sample-comp-css-var-color);
+  border-color: var(--sample-comp-css-var-color);
+}
+
+.sample-tag .alt-text {
+  color: var(--sample-tag-color);
+  border-color: var(--sample-tag-color);
+}
+
+.sample-tag-binding .alt-text {
+  color: var(--sample-tag-binding-color);
+  border-color:  var(--sample-tag-binding-color);
+}
+
+.sample-tag-dataurl .alt-text {
+  color: var(--sample-tag-dataurl-color);
+  border-color: var(--sample-tag-dataurl-color);
+}

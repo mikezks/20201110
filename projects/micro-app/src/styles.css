@@ -1,0 +1,18 @@
+/**
+ * CSS definitions relevant for Asset Loading Demo
+ */
+
+.sample-app-global-css {
+  background-image: url(/assets/images/sample-app-global-css.png);
+  border-color: var(--sample-app-global-css-color);
+}
+
+
+/**
+ * Demo App Styling
+ */
+
+ .sample-app-global-css .alt-text {
+  color: var(--sample-app-global-css-color);
+  border-color: var(--sample-app-global-css-color);
+}

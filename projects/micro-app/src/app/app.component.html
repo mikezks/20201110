@@ -1,0 +1,33 @@
+<h3>My Web Component 🥳</h3>
+
+<p>
+  <a href="http://localhost:4600">Open Shell Application with Micro Frontend</a>
+</p>
+
+<div class="sample-comp-css image-container">
+  <span class="alt-text">Not loaded:<br><br>@Component CSS<br>(inside CSS Metadata of Ivy Comp)</span>
+</div>
+<div class="sample-app-global-css image-container">
+  <span class="alt-text">Not loaded:<br><br>global src/styles.css<br>(styles.js of build process in dist)</span>
+</div>
+<div class="sample-tag image-container">
+  <img
+    src="/assets/images/sample-tag.png">
+  <span class="alt-text">Not loaded:<br><br>TAG with Path<br>(inside Render Fn of Ivy Comp)</span>
+</div>
+<div class="sample-external-css image-container">
+  <span class="alt-text">Not loaded:<br><br>seperate CSS file<br>(loaded directly into the host html)</span>
+</div>
+<div class="sample-comp-css-var image-container">
+  <span class="alt-text">Not loaded:<br><br>@Comp CSS Var<br>(Ref in CSS Metadata of Ivy Comp)</span>
+</div>
+<div class="sample-tag-binding image-container">
+  <img
+    [src]="absolutePath + 'assets/images/sample-tag-binding.png'">
+  <span class="alt-text">Not loaded:<br><br>TAG with Binding<br>(inside Render Fn of Ivy Comp)</span>
+</div>
+<div class="sample-tag-dataurl image-container">
+  <img
+    [src]="sampleTagBase64DataUrl">
+  <span class="alt-text">Not loaded:<br><br>TAG w/ Data URL<br>(Ref in Render Fn of Ivy Comp)</span>
+</div>

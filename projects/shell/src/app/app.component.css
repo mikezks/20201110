@@ -1,0 +1,7 @@
+
+:host {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 5px dashed blue;
+  display: block;
+  padding: 20px;
+}
